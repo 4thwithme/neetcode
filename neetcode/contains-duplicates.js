@@ -20,7 +20,7 @@
 // 1 <= nums.length <= 105
 // -109 <= nums[i] <= 109
 
-const containsDuplicate = (nums: number[]): boolean => {
+const containsDuplicate = (nums) => {
   const set = new Set();
   let i = 0;
 
@@ -41,7 +41,7 @@ const res2 = containsDuplicate([1, 3, 4, 6, 7, 8]);
 console.log(res2);
 
 // 2 option
-const containsDuplicate2 = (nums: number[]): boolean => {
+const containsDuplicate2 = (nums) => {
   const set = new Set(nums);
   return set.size !== nums.length;
 };
